@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <title>Spotify Light</title>
+</head>
+<body>
+    <header class="header">
+        <div class="container container_header">
+            <div class="logo">
+                <img src="./images/logo.png" alt="Logo" class="logo__img">
+                <span class="logo__text">Spotify Light</span>
+            </div>
+            <nav class="nav">
+                <div class="btn-nav btn-nav_cart">Топ чарт</div>
+                <div class="btn-nav btn-nav_artists">Топ артисты</div>
+                <div class="btn-nav btn-nav_my-tracks">Мои треки</div>
+            </nav>
+        </div>
+    </header>
+    <main class="main">
+        <div class="container container_main">
+            <div class="playlists">
+                <!--<div class="playlist-wrap">
+                    <div class="playlist">
+                        <div class="playlist-front">
+                            <img src="./images/album.jpg" alt="album" class="playlist__img">
+                            <span class="playlist__title">Razlom</span>
+                        </div>
+                        <div class="playlist-back">
+                            <img src="./images/svg/Play.svg" alt="play" class="playlist__play">
+                        </div>
+                    </div>
+                </div>-->
+            </div>
+        </div>
+    </main>
+    <div class="player">
+        <div class="container container_player">
+            <div class="track">
+                <img src="./images/album.jpg" alt="album" class="track__img">
+                <div class="track-info">
+                    <span class="track-info__name">Air force</span>
+                    <span class="track-info__author">Lil cristall</span>
+                </div>
+            </div>
+            <audio class="audio" type="audio/mp3"></audio>
+
+            <div class="player__main">
+                <div class="player__btns">
+                    <img src="./images/svg/Skip-prev.svg" alt="prev" class="player__skip player__skip_prev">
+                    <img src="./images/svg/Play.svg" alt="play" class="play play_active">
+                    <img src="./images/svg/Pause.svg" alt="pause" class="pause">
+                    <img src="./images/svg/Skip-next.svg" alt="next" class="player__skip player__skip_next">
+                </div>
+                <div class="player__indicator-info">
+                    <span class="player__start-time">0:00</span>
+                    <div class="player__indicator-wrap">
+                        <div class="player__indicator"></div>
+                    </div>
+                    <span class="player__end-time">3:24</span>
+                </div>
+            </div>
+            <div class="volume">
+                <img src="./images/svg/Volume-down.svg" alt="volume-off" class="volume-off volume-off_active">
+                <img src="./images/svg/Volume-off.svg" alt="volume-on" class="volume-on">
+                <div class="volume__indicator-wrap">
+                    <div class="volume__indicator"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="container container_footer">
+            <span class="footer__text">© 2022 Разработалa с 💚 Буторина Вика</span>
+        </div>
+    </footer>
+    <!--<div class="modal-background modal-background_playlist">
+        <div class="container container_modal">
+            <div class="modal">
+                <div class="modal__header">
+                    <span class="modal__title">Albom</span>
+                    <img src="./images/svg/Cross.svg" alt="close" class="modal__close">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal-background modal-background_create-playlist">
+        <div class="container container_modal">
+            <div class="modal">
+                <div class="modal__header">
+                    <span class="modal__title">Create Playlist</span>
+                    <img src="./images/svg/Cross.svg" alt="close" class="modal__close">
+                </div>
+            </div>
+        </div>
+    </div>-->
+    <script type="module" src="./js/main.js"></script>
+    <script type="module" src="./js/api.js"></script>
+    <script type="module" src="./js/drawCard.js"></script>
+</body>
+</html>
